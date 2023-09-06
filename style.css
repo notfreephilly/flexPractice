@@ -1,0 +1,140 @@
+/* *{
+    box-sizing: border-box;
+} */
+
+@import 
+url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+    background: #6b705c;
+}
+
+img {
+    max-width: 100%
+}
+
+h1, h2 {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+
+/* navbar styling */
+.navbar {
+    background: #a5a58d;
+    color: #ced4da;
+    height: 60px;
+}
+
+.navbar a {
+    color: #ced4da;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.navbar a:hover{
+    color: #6b705c;
+}
+
+.navbar .logo {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+
+/* Header styling */
+
+.header{
+    color: #ced4da;
+    min-height: 400px;
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.header img {
+    max-width: 400px;
+}
+
+.header .container {
+    display: flex;
+    /* aligning items on the cross axis */
+    align-items: center;
+    /* main axis */
+    justify-content: space-between;
+}
+
+
+/* boxes styling */
+
+.boxes .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box{
+    flex: 1;
+    background: #a5a58d;
+    border: 2px solid #333;
+    margin: 20px 10px;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+    padding: 15px 20px;
+}
+
+.box i {
+    margin-right: 10px;
+}
+
+/* Responsiveness */
+
+@media (max-width: 844px) {
+    .header .container {
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .boxes .container {
+        display: block;
+        text-align: center;
+    }
+}
